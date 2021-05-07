@@ -122,7 +122,21 @@ figcaption {
 }
 
 
+.footer {
+    background-color: $color-secondary;
+    padding: 3em;
+    color: $color-main;
 
+    a{
+        color: $color-main;
+    }
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 

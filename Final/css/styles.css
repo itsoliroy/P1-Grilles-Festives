@@ -91,6 +91,22 @@ figcaption {
   font-weight: 200;
 }
 
+.footer {
+  background-color: #92140C;
+  padding: 3em;
+  color: #FFF;
+}
+
+.footer a {
+  color: #FFF;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-hero {
   grid-area: img-hero;
 }
