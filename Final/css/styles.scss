@@ -1,12 +1,22 @@
 $color-bg: rgb(201, 201, 201);
 $color-main: #FFF;
 $color-secondary: #92140C;
+
 $font-size: 1.8rem;
+$font-size-h1: 6.4rem;
+$font-size-author: 3.6rem;
 $font-size-intro: 3rem;
 $font-size-quote: 2.2rem;
 $font-size-caption: 1.6rem;
+
+$font-family: 'KoHo', sans-serif;
+
 $line-height: 150%;
 $line-height-intro:160%;
+
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
 
 :root {
     font-size: 62.5%;
@@ -21,6 +31,7 @@ $line-height-intro:160%;
 body {
     background-color: $color-bg;
     font-size: $font-size;
+    font-family: $font-family;
     line-height: $line-height;
 }
 
@@ -39,6 +50,7 @@ main {
         grid-template-columns: 2fr 1fr 1fr 2fr;
         grid-gap: 1em;
         grid-template-areas:
+            "img-hero img-hero img-hero img-hero"
             "box1 box1 box3 box3"
             "box2 box2 box4 box4"
             "box5 box5 box5 box5"
@@ -46,11 +58,43 @@ main {
             "box9 box9 box10 box10"
             "box11 box11 box12 box12";
     }
+    p {
+        padding: 0;
+    }
   }
 
+    p {
+        padding: .5em 0;
+    }
 
 
+header {
+    background-color: $color-secondary;
+}
 
+.titre {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: 1em;
+    // padding-right: 1em;
+    padding: 1em 1em 2em;
+}
+
+.h1 {
+    font-size: $font-size-h1;
+    color: $color-main;
+    font-weight: 400;
+    // padding: 20px 20px 20px 0;
+    line-height: 130%;
+}
+
+.author {
+    font-size: $font-size-author;
+    color: $color-main;
+    font-weight: 200;
+    padding: .3em 0 ;
+}
 
 figure {
     img {
@@ -74,6 +118,7 @@ figure {
 figcaption {
     border-bottom: .5em solid $color-secondary;
     font-size: $font-size-caption;
+    font-weight: 200;
 }
 
 
@@ -83,6 +128,14 @@ figcaption {
 
 
 //boxes names
+
+.img-hero{
+    grid-area: img-hero;
+    img{
+        max-width: 100%;
+    }
+}
+
 .box1 {
     grid-area: box1;
 }
@@ -91,6 +144,7 @@ figcaption {
 }
 .box3 {
     grid-area: box3;
+    //margin top pour aligner le texte sur la ligne du bas du block
     margin-top: auto;
 }
 .box4 {

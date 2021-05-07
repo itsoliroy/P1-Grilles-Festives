@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap");
 :root {
   font-size: 62.5%;
 }
@@ -12,6 +13,7 @@
 body {
   background-color: #c9c9c9;
   font-size: 1.8rem;
+  font-family: "KoHo", sans-serif;
   line-height: 150%;
 }
 
@@ -30,8 +32,40 @@ main {
     -ms-grid-columns: 2fr 1fr 1fr 2fr;
         grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-gap: 1em;
-        grid-template-areas: "box1 box1 box3 box3" "box2 box2 box4 box4" "box5 box5 box5 box5" "box6 box7 box7 box8" "box9 box9 box10 box10" "box11 box11 box12 box12";
+        grid-template-areas: "img-hero img-hero img-hero img-hero" "box1 box1 box3 box3" "box2 box2 box4 box4" "box5 box5 box5 box5" "box6 box7 box7 box8" "box9 box9 box10 box10" "box11 box11 box12 box12";
   }
+  p {
+    padding: 0;
+  }
+}
+
+p {
+  padding: .5em 0;
+}
+
+header {
+  background-color: #92140C;
+}
+
+.titre {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 1em 2em;
+}
+
+.h1 {
+  font-size: 6.4rem;
+  color: #FFF;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.author {
+  font-size: 3.6rem;
+  color: #FFF;
+  font-weight: 200;
+  padding: .3em 0;
 }
 
 figure img {
@@ -54,6 +88,15 @@ figure img {
 figcaption {
   border-bottom: 0.5em solid #92140C;
   font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.img-hero {
+  grid-area: img-hero;
+}
+
+.img-hero img {
+  max-width: 100%;
 }
 
 .box1 {
