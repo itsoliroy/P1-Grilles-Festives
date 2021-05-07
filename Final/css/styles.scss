@@ -1,5 +1,16 @@
 $color-bg: rgb(201, 201, 201);
 $color-main: #FFF;
+$color-secondary: #92140C;
+$font-size: 1.8rem;
+$font-size-intro: 3rem;
+$font-size-quote: 2.2rem;
+$font-size-caption: 1.6rem;
+$line-height: 150%;
+$line-height-intro:160%;
+
+:root {
+    font-size: 62.5%;
+}
 
 * {
     margin: 0;
@@ -9,6 +20,8 @@ $color-main: #FFF;
 
 body {
     background-color: $color-bg;
+    font-size: $font-size;
+    line-height: $line-height;
 }
 
 main {
@@ -17,4 +30,93 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+    
+}
+
+@media (min-width: 600px) {
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-gap: 1em;
+        grid-template-areas:
+            "box1 box1 box3 box3"
+            "box2 box2 box4 box4"
+            "box5 box5 box5 box5"
+            "box6 box7 box7 box8"
+            "box9 box9 box10 box10"
+            "box11 box11 box12 box12";
+    }
+  }
+
+
+
+
+
+figure {
+    img {
+        max-width: 100%;
+    }
+}
+
+.intro {
+    font-weight: bold;
+    font-size: $font-size-intro;
+    margin-top: auto;
+    line-height: $line-height-intro;
+}
+
+.quote {
+    text-align: center;
+    font-size: $font-size-quote;
+    padding: 2em;
+}
+
+figcaption {
+    border-bottom: .5em solid $color-secondary;
+    font-size: $font-size-caption;
+}
+
+
+
+
+
+
+
+//boxes names
+.box1 {
+    grid-area: box1;
+}
+.box2 {
+    grid-area: box2;
+}
+.box3 {
+    grid-area: box3;
+    margin-top: auto;
+}
+.box4 {
+    grid-area: box4;
+}
+.box5 {
+    grid-area: box5;
+}
+.box6 {
+    grid-area: box6;
+}
+.box7 {
+    grid-area: box7;
+}
+.box8 {
+    grid-area: box8;
+}
+.box9 {
+    grid-area: box9;
+}
+.box10 {
+    grid-area: box10;
+}
+.box11 {
+    grid-area: box11;
+}
+.box12 {
+    grid-area: box12;
 }
