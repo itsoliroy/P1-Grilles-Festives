@@ -26,7 +26,7 @@ main {
 }
 
 @media (min-width: 600px) {
-  .main {
+  .box {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 2fr 1fr 1fr 2fr;

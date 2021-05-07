@@ -45,7 +45,7 @@ main {
 }
 
 @media (min-width: 600px) {
-    .main {
+    .box {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 2fr;
         grid-gap: 1em;
